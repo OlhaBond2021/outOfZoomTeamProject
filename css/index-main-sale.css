@@ -1,0 +1,70 @@
+.sale__cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 991px) {
+  .sale__cards {
+    flex-wrap: nowrap;
+  }
+}
+
+.sale__card,
+.sale__card-img {
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .sale__card {
+    max-width: 45%;
+  }
+
+  .sale__card:nth-child(5n) {
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 768px) {
+  .sale__card {
+    max-width: 30%;
+  }
+
+  .sale__card:nth-child(4n),
+  .sale__card:nth-child(5n) {
+    max-width: 45%;
+    justify-content: space-between;
+  }
+}
+
+.sale__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.sale__card-link,
+.sale__card-price {
+  font-family: "PT Sans", sans-serif;
+  color: #717474;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sale__card-price {
+  color: var(--accent-text-color);
+  font-weight: 700;
+}
+
+.base__button {
+  background-color: var(--dark-color);
+}
+
+/* додати js на кнопки, щоб робити їх червоно кольору при натисканні і додованні в корзину */
+div.sale__card>.base__button:hover {
+  background-color: var(--accent-signal-color);
+  transition: 0.5s;
+}

@@ -1,0 +1,168 @@
+.deal__container{
+    display: flex;
+}
+.deal__content{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 50%;
+    flex-wrap: wrap;
+    background-color: var(--dark-color);
+}
+.deal__body{ 
+    max-width: 502px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+/* content */
+.deal__title{ 
+    font-size: 124px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    color:var(--light-color);
+    line-height: 1;
+    padding: 0 0 20px 0;
+}
+@media(max-width:960px){ 
+    .deal__title{ 
+        font-size: 93px;
+    }
+}
+.title-dot{ 
+    color: var(--accent-text-color);
+}
+.deal__text-price{ 
+    font-size: 16px;
+    color:var(--light-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 27.2px;
+    padding: 0 0 25px 0;
+    font-family:"PT Sans", sans-serif;
+}
+.deal-price{ 
+    color: var(--accent-text-color);
+    font-size: 42px;
+    line-height: 71px;
+    padding: 0 5px 0 0;
+}
+.deal__crossed-out{ 
+    font-size: 23px;
+}
+.deal__text{ 
+    font-size: 20px;
+    color: var(--light-color);
+    line-height: 30px;
+    font-weight: 500;
+    padding: 0 0 47px 0;
+    font-family:"PT Sans", sans-serif;
+}
+.deal__link{ 
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--light-color);
+    display: inline-block;
+    padding: 0 0 15px 0;
+    font-family:"PT Sans", sans-serif;
+}
+.deal__link {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 20px 0;
+}
+.deal__link::after{ 
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform:scaleX(0);
+    height: 1.5px;
+    bottom: -1.5px;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.deal__link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.deal-arrow{ 
+    background: url(../img/deal-of-the-month/Arrow.svg) right no-repeat;
+    padding: 0 25px 0 0;
+}
+.deal__image {
+    flex: 0 1 50%;
+}
+.deal__image img{ 
+    display: block;
+    height: 950px;
+    object-fit: cover;
+    object-position: 50% 25%;
+    width: 100%;
+    /* object-fit: cover; */
+    /* object-position: center calc(50% + 10px) */
+}
+@media(max-width:887px){ 
+    .deal__container{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .deal__body{ 
+        max-width: 100%;
+    }
+    .deal__image img{ 
+        object-position: center;
+        object-fit: center;
+        height: auto;
+        width: 100%;
+    }
+    .deal__content{ 
+        padding: 100px 30px;
+    }
+    .deal__title{ 
+        font-size: 62px;
+    }
+}
+/* countdown */
+.deal__countdown-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.countdown-section{
+    flex: 0 1 25%;
+    width: 100%;
+}
+@media(max-width:887px){ 
+    .countdown-section{ 
+        flex: 0 1 50%;
+    }
+    .deal__countdown-body { 
+        max-width: 350px;
+    }
+
+}
+.countdown-section{ 
+    padding: 0 20px 20px 0;
+    
+}
+.countdown__item {
+    border: 1px solid var(--light-color);
+    border-color: #bdbdbd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 24px 12px;
+}
+.countdown__item h3 {
+    color: var(--light-color);
+    font-size: 24px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.countdown__item h4 {
+    color: var(--light-color);
+    opacity: 50%;
+    font-size: 14px;
+    font-family:"PT Sans", sans-serif;
+    font-weight: 400;
+}

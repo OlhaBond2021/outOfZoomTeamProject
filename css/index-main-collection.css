@@ -1,0 +1,363 @@
+/*@media (max-width:0px) {  }*/
+/* ============================= */
+
+.main-collection {
+	padding: 90px 0px 120px 0px;
+
+}
+.main-collection__about {
+	display: flex;
+	flex-direction: column;
+}
+.__conteiner {
+	max-width: 1170px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	min-width: 100%;
+
+}
+.main-collection__title {
+	text-align: center;
+	margin: 0px 0px 50px 0px;
+}
+.text {
+}
+.text__title {
+	position: relative;
+}
+
+@media (min-width: 320px) {
+	.text__title {
+	font-size:38px;
+	font-family: "Bebas Neue";
+	font-weight: 400;
+	color: #222323;
+	line-height: 40px;
+	margin: 0px 0px 20px 0px;
+	}
+	
+}
+@media (min-width: 768px) {
+	.text__title {
+		font-size: 45px;
+	}
+	}
+	@media (min-width: 992px) {
+		.text__title {
+			font-size: 52px;
+		}
+	}
+		
+		/*.line{
+	display: inline-block;
+	align-items: center;
+	min-width: 7%;
+	height: 2px;
+	background-color: #8a2c2c;
+	margin: 0px 0px 20px 0px;
+}*/
+
+.text__subtitle {
+	font-family: "PT Sans", sans-serif;
+	color: var(--primary-text-color);
+	font-size: 20px;
+}
+/* ===================================================== */
+.main-collection__block {
+}
+.shop {
+
+}
+.shop__menu {
+margin: 0px 0px 30px 0px;
+border-bottom: 1px solid #a7a7;
+}
+
+.shop__list {
+	display: flex;
+	justify-content:center;
+	/*padding: 0px 0px 20px 0px;*/
+
+}
+.shop__list li{
+font-size: 16px;
+font-family: "PT Sans";
+color:#a7a7a7;
+position: relative;
+}
+
+.shop__link {
+display: inline-block;
+padding: 25px 25px;
+}
+.shop__link:hover{
+	color: #5e5e5e;
+	transition: 0.5s;
+}
+.line-red::before {
+content: "";
+position: absolute;
+display: inline-block;
+bottom: -1px;
+left: 0;
+width: 100%;
+height: 2px;
+background-color: var(--accent-signal-color);
+}
+
+/* ================================================================ */
+.shop__items {
+}
+
+.hiden{
+display: none;
+}
+
+.shop__item-women,
+.shop__item-men,
+.shop__item-choes{
+display: inline-block;
+padding: 0px 10px;
+
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	color:black;
+}
+
+@media (min-width: 768px ){
+.shop__item-women,
+.shop__item-men,
+.shop__item-choes {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card{
+		flex: 1 1 50%;
+		padding: 0px 10px 0px 0px;
+	}
+	.card:last-child{
+		flex: 0 1 50%;
+		margin: 0 auto;
+	}
+}
+
+
+@media (min-width: 992px){
+.shop__item-women,
+.shop__item-men,
+.shop__item-choes {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.card{
+		flex: 0 0 33.333%;
+		padding: 0px 10px 0px 0px;
+	}
+	.card:last-child{
+		flex: 0 1 33.333%;
+	}
+}
+
+.card__img {
+	margin: 0px 0px 10px 0px;
+}
+.block-img img{
+}
+.card__img{
+	display: inline-block;
+}
+.card__img img{
+	max-width: 100%;
+}
+
+.card__text {
+	font-size: 18px;
+	font-family: "PT Sans", sans-serif;
+	color:var(--primary-text-color);	
+	text-transform: capitalize;
+	margin: 0px 0px 30px 0px;
+}
+.card__price {
+	font-size: 18px;
+	font-family: "PT Sans";
+	color: var(--accent-signal-color);
+	font-weight: 600;
+	margin: 0px 0px 20px 0px;
+
+}
+.card__link{
+	display: inline-block;
+	font-size: 15px;
+	font-family: "PT Sans";
+	color:var(--light-color);
+	max-width: 150px;
+	font-weight: 500;
+	padding: 10px 30px;
+	background-color: #222323;
+	margin: 0px 0px 20px 0px;
+}
+.card__link:hover{
+background-color:var(--accent-signal-color);
+}
+.hiden{
+	display: none;
+}
+/* =======index========== */
+.product {
+	padding: 80px 30px;
+	font-family: "PT Sans",sans-serif;
+}
+.base__container {
+}
+.product__homepage {
+	color: var(--accent-signal-color);
+	margin: 0px 0px 40px 0px;
+}
+.product__content {
+
+}
+
+@media (min-width: 320px) {
+	.product__content {
+display: inline-block;	
+}
+}
+
+@media (min-width: 767px){
+	.product__content {
+display: flex;
+}
+}
+.product__slider {
+	margin: 0px 0px 25px 0px;
+}
+@media (min-width: 767px){
+	.product__slider {
+		flex: 1 1 50%;
+}
+}
+.product__about{
+
+}
+@media (min-width: 767px){
+	.product__about {
+		flex: 1 1 50%;
+}
+}
+.product__title {
+}
+.product__stock {
+	color: var(--in-stock);
+	font-size: 16px;
+	line-height: 1.7;
+	font-weight: 400;
+}
+.product__sub-title {
+	font-size: 22px;
+	line-height: 1.36;
+	color: var(--dark-color);
+	margin: 0px 0px 15px 0px;
+	font-weight: 400;
+	font-family: "Bebas Neue";
+}
+.product__code {
+	font-size: 14px;
+	line-height: 1.8;
+	font-weight: 100;
+	margin: 0px 0px 25px 0px;
+}
+.product__price {
+	font-size: 18px;
+	line-height: 1.56;
+	font-weight: 600;
+	color: var(--primary-text-color);
+	border-bottom: 2px solid var(--primary-text-color);
+	padding: 0px 0px 50px 0px;
+	margin: 0px 0px 20px 0px;
+
+}
+.product__button {
+}
+.button {
+	display: flex;
+	align-items: center;
+	margin: 0px 0px 30px 0px;
+}
+
+
+
+/* ===========кнопки========================== */
+.value{
+	position: relative;
+margin-right: 5px;
+}
+.product__value {
+display: inline-block;
+border: 1px solid black;
+width: 50px;
+height: 40px;
+padding: 0px 0px 0px 5px;
+}
+.product__counter{
+	position: absolute;
+	display: inline-block;
+	width: 15px;
+	height: 10px;
+}
+.product__counter_up{
+	top: 3px;
+	right: 3px;
+}
+.product__counter_down{
+	bottom: 7px;
+	right: 3px;
+
+}
+
+/* ========================================= */
+
+@media (min-width: 320px) {
+	.button__amount {
+		height: 38px;
+		min-width: 55px;
+		border: 1px solid var(--dark-color);
+		margin: 0px 5px 0px 0px;
+		border-radius: 3px;
+	}
+}
+.button-link {
+	padding: 10px 0px 10px 0px;
+	flex: 1 1 80%;
+	background-color: var(--accent-signal-color);
+}
+.description-product {
+}
+.description-product__title {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: 600;
+	color: var(--primary-text-color);
+	margin: 0px 0px 10px 0px;
+	padding: 0px 10px;
+	position: relative;
+}
+.description-product__title::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: -10px;
+	left: 0;
+	background-color: var(--accent-signal-color);
+}
+.description-product__text {
+	padding: 20px 0px 0px 0px;
+	border-top: 2px solid var(--dark-color);
+	color: #717474;
+	font-size: 16px;
+	line-height: 1.7;
+}
+/* =============================================== */

@@ -1,0 +1,244 @@
+.header__h1 {
+    text-transform: uppercase;
+    font-size: 62px;
+    font-weight: 400;
+    color: var(--dark-color);
+}
+
+@media (min-width: 660px) {
+    .header__h1 {
+        font-size: 93px;
+    }
+}
+
+.header__h1-accent {
+    color: var(--accent-text-color);
+}
+
+.header-contacts {
+    background-color: var(--accent-back-color);
+    height: 48px;
+    display: none;
+}
+
+.header__container {
+    display: grid;
+    vertical-align: bottom;
+    grid-template-columns: 4fr 1fr 1fr;
+    padding: 12px;
+}
+
+.header__h6, .header__contact {
+    color: var(--light-color);
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.grid__contact {
+    text-align: right;
+}
+
+.header__contact:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.header-menu {
+    background-color: var(--dark-color);
+}
+
+.menu__container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding: 12px;
+}
+
+.header-logo__container {
+    margin: auto 0;
+    z-index: 2;
+}
+
+.header__logo {
+    margin: 0;
+    width: 165px;
+}
+
+.header-links {
+    margin: auto 0;
+    display: none;
+}
+
+.header__link {
+    color: var(--light-color);
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+.header__link-underline {
+    --underline-length: 0px;
+    max-width: 80px;
+    margin: auto;
+}
+
+.header__link-underline:hover {
+    --underline-length: 100%;
+}
+
+.underline {
+    height: 2px;
+    margin-bottom: 12px;
+    width: var(--underline-length);
+    background-color: var(--light-color);
+    transition: 0.3s ease-in-out;
+}
+
+.header-socials {
+    margin: auto 0 auto auto;
+    height: 30px;
+    display: none;
+}
+
+.navigation-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 22px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 5;
+    margin: auto 12px auto auto;
+  }
+.navigation-burger span,
+.navigation-burger::before,
+.navigation-burger::after {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--light-color);
+    transition: all 0.5s ease-in-out;
+  }
+.navigation-burger span {
+    transform: scale(1);
+  }
+.navigation-burger::before,
+.navigation-burger::after {
+    content: " ";
+  }
+.navigation-burger::before {
+    top: 0;
+  }
+.navigation-burger::after {
+    bottom: 0;
+  }
+.navigation-burger.active span {
+    transform: scale(0);
+  }
+.navigation-burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+.navigation-burger.active::after {
+    bottom: 40%;
+    transform: rotate(45deg);
+  }
+
+.header__social {
+    background-color: var(--light-color);
+    width: 30px;
+    height: 30px;
+    margin: 0 6px 0 6px;
+    transition: 0.3s;
+}
+
+.header__social:hover {
+    background-color: var(--accent-signal-color);
+    transition: 0.3s;
+}
+
+.header-niger {
+    background-image: url(../img/backgrounds/niger-1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 990px) {
+    .header-contacts {
+        display: block;
+    }
+    .header__h1 {
+        font-size: 124px;
+    }
+    .header-links {
+        display: flex;
+    }
+    .header-socials {
+        display: block;
+    }
+    .header__social {
+        margin: 0 0 0 12px;
+    }
+    .navigation-burger {
+        display: none;
+      }
+    .header-niger {
+        min-height: 720px;
+    }
+    .header__link-underline {
+        margin: 0 20px;
+    }
+}
+
+.aspire__container {
+    width: 60%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+div.aspire__container > .base__button {
+    background-color: var(--accent-text-color);
+    color: var(--light-color);
+}
+
+div.aspire__container > .base__button:hover {
+    background-color: var(--dark-color);
+    transition: 0.5s;
+}
+
+.header__h4 {
+    color: var(--secondary-text-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.navigation-wrapper {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-color);
+    z-index: 2;
+    transition: top 0.3s ease-in;
+    overflow: hidden;
+    margin: auto;
+    z-index: 1;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+.navigation-wrapper.active {
+    top: 0;
+  }
